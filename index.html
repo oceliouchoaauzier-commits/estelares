@@ -4,40 +4,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="ESTELARES - Agente Pessoal Modular">
-    <title>ESTELARES</title>
+    <meta name="theme-color" content="#0a0e27">
+    <title>🌟 ESTELARES - Agente Pessoal</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌟</text></svg>">
 </head>
 <body>
     <div class="container">
         <header class="header">
             <div class="header-content">
-                <h1 class="header-title">✨ ESTELARES</h1>
-                <div class="header-status" id="status">Inicializando...</div>
+                <h1 class="header-title">🌟 ESTELARES</h1>
+                <div id="status" class="header-status">Inicializando...</div>
             </div>
         </header>
 
-        <main class="chat-container">
-            <div class="messages" id="messages"></div>
-            <div class="input-area">
-                <div class="input-wrapper">
-                    <input 
-                        type="text" 
-                        id="input" 
-                        class="input-field" 
-                        placeholder="Digite sua mensagem..."
-                        autocomplete="off"
-                    >
-                    <button id="send-btn" class="send-btn">Enviar</button>
-                </div>
-                <div class="input-controls">
-                    <button id="voice-btn" class="control-btn voice-btn" title="Voz">🎤</button>
-                    <button id="clear-btn" class="control-btn clear-btn" title="Limpar">🗑️</button>
-                </div>
+        <div class="chat-container">
+            <div id="messages" class="messages"></div>
+        </div>
+
+        <div class="input-area">
+            <div class="input-controls">
+                <button id="voice-btn" class="control-btn" title="Voz">🎤</button>
+                <button id="clear-btn" class="control-btn" title="Limpar">🗑️</button>
             </div>
-        </main>
+
+            <div class="input-wrapper">
+                <input id="input" type="text" class="input-field" placeholder="Digite... (/help para comandos)" autocomplete="off">
+                <button id="send-btn" class="send-btn">Enviar</button>
+            </div>
+
+            <div style="font-size: 0.75rem; color: #888; margin-top: 10px; padding: 0 15px;">
+                💡 /help | /calc 2+2 | /status | /clear
+            </div>
+        </div>
 
         <footer class="footer">
-            <p>ESTELARES v0.1.0 | Arquitetura Modular</p>
+            ESTELARES v0.1.0 | © 2026
         </footer>
     </div>
 
